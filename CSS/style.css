@@ -1,0 +1,126 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 185, 185);
+}
+
+section {
+    width: calc(70vh*3/5);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgb(22, 22, 22);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    width: 100%;
+    height: 24vh;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.card img:nth-child(1) {
+    width: 100%;
+    position: relative;
+    bottom: 70%;
+}
+
+.card img:nth-child(2) {
+    width: 30%;
+    border-radius: 50%;
+    border: 2px solid #b3b3b3;
+    position: relative;
+    top: -6vh;
+}
+
+h1 {
+    color: #b3b3b3;
+    position: relative;
+    top: -7vh;
+    font-size: 3vh;
+}
+
+h2 {
+    color: #b1b1b1;
+    position: relative;
+    top: -7vh;
+    font-size: 2vh;
+}
+
+#social-networks {
+    position: relative;
+    bottom: -10vh;
+}
+
+#social-networks>nav img {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(303deg) brightness(104%) contrast(101%);    
+}
+
+#social-networks>nav>a>img {
+    padding: 0 2vh;
+    height: 4vh;
+    width: 4vh;
+    justify-self: center;
+    align-self: center;
+    /* transition: 0.6s; */
+}
+
+#social-networks>nav>a:hover:nth-child(1)>img {
+    filter: invert(14%) sepia(90%) saturate(7123%) hue-rotate(317deg) brightness(109%) contrast(98%);
+}
+
+#social-networks>nav>a:hover:nth-child(2)>img {
+    filter: invert(56%) sepia(28%) saturate(5854%) hue-rotate(179deg) brightness(97%) contrast(95%);
+}
+
+#social-networks>nav>a:hover:nth-child(3)>img {
+    filter: invert(20%) sepia(33%) saturate(2647%) hue-rotate(188deg) brightness(99%) contrast(91%);
+}
+
+/* @media (max-width: 500px) {
+    section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        width: 70vw;
+        height: calc(70vw*5/3);
+    }
+
+    .card img:nth-child(2) {
+        width: 10px;
+        border-radius: 50px;
+        position: relative;
+        top: -14%;
+    }
+} */
+
+@media (max-width: 650px) {
+    body {
+        position: fixed;
+        width: 650px;
+    }
+}
+
+@media (max-height: 700px) {
+    body {
+        position: fixed;
+        height: 700px;
+    }
+}
